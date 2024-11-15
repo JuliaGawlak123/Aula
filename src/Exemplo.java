@@ -1,5 +1,12 @@
 
 public class Exemplo {
+    private static void sayHelloManyTimes(int times){
+        for(int i = 0; i< times;i++){
+            say();
+            sayHello();
+        }
+    }
+
     private static void sayHello(){
         System.out.println("Olá mundo");
     }
@@ -8,7 +15,6 @@ public class Exemplo {
         System.out.println("Julia Linda");
     }
     public static void main(String[] args) {
-        sayHello();
-        say();
+        sayHelloManyTimes(5);
     }
 }
